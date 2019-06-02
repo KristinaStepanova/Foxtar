@@ -84,68 +84,33 @@
     }
 }
 .footer__social{
-    margin-bottom: 25px;
-    ul{
-        li{
-            display: inline-block;
-            &:first-child a{
-                background-color: #3b5998;
-                &:before{
-                    content: '\f09a';
-                    top: 65%;
-                    left: 60%;
-                    font-size: 25px;
-                }
-            }
-            &:nth-child(n+2) a{
-                background-color: #55acee;
-                &:before{
-                    content: '\f099';
-                    font-size: 22px;
-                }
-            }
-            &:nth-child(n+3) a{
-                background-color: #e52d27;
-                &:before{
-                    content: '\f16a';
-                    font-size: 20px;
-                }
-            }
-            &:nth-child(n+4) a{
-                background-color: $white;
-                &:before{
-                    content: '\f0d2';
-                    font-size: 25px;
-                    color: #bd081c;
-                }
-            }
-            &:last-child a{
-                background-color: #1565c0;
-                &:before{
-                    content: '\f0e1';
-                    font-size: 17px;
-                    color: $white;
-                }
-            }
-            a{
-                width: 30px;
-                height: 30px;
-                position: relative;
-                &:before{
-                    font-family: 'icomoon';
-                    position: absolute;
-                    color: $white;
-                    font-size: 15px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
+   li{
+       display: inline-block;
+       a{
+           width: 28px;
+           height: 28px;
+           background-image: url(../img/social.png);
+           background-position: -1px -1px;
+       }
+       .footer__facebook{
+        background-position: -10px -10px;
         }
-        li + li{
-            margin-left: 5px;
+        .footer__twitter{
+            background-position: -58px -10px;
         }
-    }
+        .footer__youtube{
+            background-position:  -10px -58px;
+        }
+        .footer__pinterest{
+            background-position: -58px -58px;
+        }
+        .footer__linkedin{
+            background-position: -106px -10px;
+        }
+   }
+   li + li{
+       padding-left: 4px;
+   }
 }
 .footer__form-title{
     font-size: 20px;
