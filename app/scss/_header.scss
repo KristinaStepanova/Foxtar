@@ -126,12 +126,16 @@
             margin-bottom: 8px;
             height: 43px;
             width: 100%;
+            font-size: 14px;
             border: none;
             outline: none;
             color: $white;
             background-color: #76ae36;
             padding-left: 40px;
             padding-right: 10px;
+            &::placeholder{
+                color: $white;
+            }
         }
         &:before{
             font-family: 'icomoon';
@@ -140,12 +144,6 @@
             color: $white;
             top: 9px;
             left: 16px;
-        }
-        input::-webkit-input-placeholder {
-            color: $white;
-        }
-        input:-moz-placeholder {
-            color: $white;
         }
     }
 }
