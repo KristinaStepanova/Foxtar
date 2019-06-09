@@ -353,3 +353,32 @@
     text-align: center;
     color: $fon;
 }
+
+// Category page
+
+//Breadcrumbs start
+.breadcrumbs{
+    padding: 45px 0px 40px;
+    li{
+        display: inline-block;
+        padding-right: 9px;
+        &:after{
+            content: '-';
+            color: $green;
+            margin-left: 9px;
+        }
+        &:last-child{
+            a{
+                color: $fon;
+            }
+            &:after{
+                display: none;
+            }
+        }
+    }
+    a{
+        font-size: 15px;
+        color: #b0bec5;
+    }
+}
+//Breadcrumbs end

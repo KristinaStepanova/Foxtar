@@ -3,7 +3,7 @@ let gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglifyjs = require('gulp-uglifyjs'),
 	cssnano = require('gulp-cssnano'),
-	rename = require('gulp-rename'),
+	concatCss = require('gulp-concat-css'),
 	browserSync = require('browser-sync'),
 	autoprefixer = require('gulp-autoprefixer');
 
@@ -19,10 +19,13 @@ gulp.task('scss', function () {
 });
 
 gulp.task('css', function () {
-	return gulp.src('app/css/libs.css')
+	return gulp.src(['node_modules/normalize.css/normalize.css',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+		'node_modules/slick-carousel/slick/slick.css',
+		'node_modules/bootstrap/dist/css/bootstrap-grid.css'])
+		.pipe(concatCss('libs.min.css'))
 		.pipe(cssnano())
-		.pipe(rename({ 'suffix': '.min' }))
-		.pipe(gulp.dest('app/css'))
+		.pipe(gulp.dest('app/css/'))
 });
 
 gulp.task('script', function () {
@@ -36,7 +39,8 @@ gulp.task('browser-sync', function () {
 	browserSync({
 		server: {
 			baseDir: 'app'
-		}
+		},
+		notify: false
 	})
 })
 
