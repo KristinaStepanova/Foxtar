@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Raleway:700|Roboto:400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="scss/_font.scss">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__content-right">
+                        <div class="header__content-text">
+                            <span>Need help?</span> Talk to an expert:
+                            <a href="tel:">+61 3 8376 6284</a>
+                        </div>
+                        <div class="header__content-items">
+                            <div class="header__content-item header-basket">
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="header__content-btn">
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn-login">login</a>
+                            <a href="#" class="header__btn-register">register</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">WordPress</a></li>
+                        <li><a href="#">Joomla</a></li>
+                        <li><a href="#">PSD</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="modal">
+            <div class="login__title">
+                login
+            </div>
+            <div class="login__inner">
+                <form class="login__form">
+                    <label class="form__name">
+                        <input type="text" autocomplete="off" placeholder="Name">
+                    </label>
+                    <label class="form__pass">
+                        <input type="password" autocomplete="off" placeholder="Password">
+                    </label>
+                    <input type="submit" value="Submit">
+                    <a href="#" class="form__link">create an account?</a>
+                </form>
+                <a href="#" class="form__lost">lost password?</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Search start -->
+    <div class="search">
+        <div class="container">
+            <div class="search__text">
+                Premium WordPress Themes, Web Templates and Many More ...
+            </div>
+            <div class="search__form">
+                <input type="text" placeholder="Search Your Keywords . . .">
+                <button type="submit">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Search end -->
+    <main class="upload">
+        <!-- Breadcrumbs start -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumbs end -->
+
+        <!-- Upload start -->
+        <div class="container">
+            <div class="upload__wrapper">
+                <form>
+                    <div class="upload__title">
+                        Upload Your item
+                    </div>
+                    <div class="upload__form-box">
+                        <div class="upload__form-item">
+                            <label>Select Categories<sup>*</sup> </label>
+                            <select>
+                                <option>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Product Name</label>
+                            <input type="text" value="Enter your product name here ..." required>
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Product Description</label>
+                            <textarea placeholder="<h1> Type your text  here </h1/>"></textarea>
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Upload Main File</label>
+                            <input type="file">
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Upload Screenshots</label>
+                            <input type="file">
+                        </div>
+                        <div class="upload__form-item">
+                            <label>File Included</label>
+                            <select>
+                                <option>Select File Type</option>
+                                <option>Select File Type</option>
+                                <option>Select File Type</option>
+                            </select>
+                        </div>
+                        <div class="upload__form-item">
+                            <label>File Dimensions</label>
+                            <input type="text" placeholder="Enter the item  dimentionss here ...">
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Item Tags</label>
+                            <input type="text" placeholder="Enter Tag Here">
+                        </div>
+                    </div>
+                    <div class="upload__title">
+                        Set Your Price (US$)
+                    </div>
+                    <div class="upload__form-box">
+                        <div class="upload__form-item">
+                            <label>Regular License</label>
+                            <input type="number" placeholder="$00.00">
+                        </div>
+                        <div class="upload__form-item">
+                            <label>Regular License</label>
+                            <input type="number" placeholder="$00.00">
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Upload end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div>
+                            <div class="footer__title">
+                                about company
+                            </div>
+                            <div class="footer__text">
+                                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce
+                                sit amet urna iat.Praesent vel rutrum purus.
+                            </div>
+                            <div class="footer__address">
+                                PO Box 16122 Collins Street West
+                                Victoria 8007 Australia
+                            </div>
+                            <div class="footer__phone">
+                                <a href="tel:">
+                                    +61 3 8376 6284
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                join our community
+                            </div>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="#">Become an Author</a>
+                                </li>
+                                <li>
+                                    <a href="#">Community Meetups</a>
+                                </li>
+                                <li>
+                                    <a href="#">Become an Affiliate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                need help?
+                            </div>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Foxtar Market Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Author Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Foxtar Licenses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <div class="footer__title">
+                                follow us on
+                            </div>
+                            <div class="footer__social">
+                                <ul>
+                                    <li><a class="footer__facebook" href="#"></a></li>
+                                    <li><a class="footer__twitter" href="#"></a></li>
+                                    <li><a class="footer__youtube" href="#"></a></li>
+                                    <li><a class="footer__pinterest" href="#"></a></li>
+                                    <li><a class="footer__linkedin" href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__form-title">
+                                Newsletter Sign Up!
+                            </div>
+                            <div class="footer__form">
+                                <form>
+                                    <div class="footer__form-content">
+                                        <input type="email" placeholder="E-mail Address">
+                                        <button></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="footer__copy-text">
+                © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
