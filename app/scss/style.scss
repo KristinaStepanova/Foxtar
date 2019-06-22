@@ -471,6 +471,7 @@
 //Breadcrumbs end
 .upload{
     background-color: #f4f6f5;
+    padding-bottom: 105px;
 }
 .upload__wrapper{
     background-color: #fff;
@@ -492,7 +493,8 @@
     display: flex;
     label{
         display: block;
-        width: 200px;
+        max-width: 175px;
+        width: 100%;
         padding-right: 15px;
         color: #444;
         padding-top: 10px;
@@ -517,7 +519,7 @@
         text-shadow: none;
         padding: 0 45px 0 15px;
     }
-    .jq-selectbox{
+    .jq-selectbox, .jq-number{
         width: 100%;
     }
     .jq-selectbox__trigger{
@@ -541,11 +543,12 @@
         padding: 15px;
         resize: none;
     }
-    .jq-file{
+    .jq-file, .jq-number__field{
         box-shadow: none;
         text-shadow: none;
         width: 100%;
         border-radius: 0;
+        border: none;
     }
     .jq-file__name{
         padding-left: 115px;
@@ -581,5 +584,25 @@
             padding-right: 14px;
             text-align: center;
         }
+    }
+    .jq-number{
+        padding: 0;
+        max-height: 40px;
+        
+    }
+    .jq-number__spin{
+        display: none;
+    }
+}
+.upload__form-box{
+    button[type="submit"]{
+        line-height: 46px;
+        padding: 0px 35px;
+        background-color: $green;
+        border: none;
+        font-weight: 500;
+        color: #fff;
+        width: unset;
+        margin: 22px 0 65px 205px;
     }
 }
