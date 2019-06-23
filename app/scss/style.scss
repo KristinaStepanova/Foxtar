@@ -72,8 +72,9 @@
   color: $fon;
   font-weight: 700;
   line-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 36px;
+  line-height: 45px;
 }
 .item {
   max-width: 440px;
@@ -259,7 +260,7 @@
 }
 .slider__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   line-height: 30px;
   font-size: 36px;
   font-weight: 700;
@@ -280,6 +281,7 @@
   font-size: 36px;
   text-align: center;
   margin-bottom: 70px;
+  line-height: 40px;
 }
 .benefit__img {
   img {
@@ -350,12 +352,15 @@
 .projects__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 40px;
   color: $fon;
   text-align: center;
+  margin-bottom: 55px;
 }
 .projects__item {
   background-color: #f8f8f8;
+  width: 100%;
+  margin-top: 25px;
 }
 .project__name {
   min-height: 100px;
@@ -364,6 +369,9 @@
   font-weight: 700;
   text-align: center;
   color: $fon;
+}
+.project__img img{
+  width: 100%;
 }
 // Category page
 .category {
