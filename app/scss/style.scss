@@ -188,8 +188,8 @@
   color: $fon;
   padding-left: 13px;
   display: inline-block;
-  span{
-      color: #b0bec5;
+  span {
+    color: #b0bec5;
   }
 }
 .portfolio__content {
@@ -255,7 +255,7 @@
     }
   }
 }
-.slider-item{
+.slider-item {
   padding: 0px 15px;
 }
 .slider__title {
@@ -370,7 +370,7 @@
   text-align: center;
   color: $fon;
 }
-.project__img img{
+.project__img img {
   width: 100%;
 }
 // Category page
@@ -388,7 +388,7 @@
   .item__info-name {
     font-size: 16px;
   }
- 
+
   .item__user {
     img {
       margin-right: 10px;
@@ -654,8 +654,40 @@
     margin: 22px 0 65px 205px;
   }
 }
-
-
-
+.product__inner {
+  display: flex;
+  padding-top: 30px;
+}
+.product__content {
+}
+.product__tabs {
+  border: 1px solid #dfdfdf;
+  .tab-content {
+    display: none;
+    padding: 30px;
+  }
+  .tab-content.current {
+    display: inherit;
+  }
+  .tabs{
+    display: flex;
+    li{
+      width: 100%;
+      border-bottom: 1px solid #dfdfdf;
+      text-align: center;
+      padding: 20px 0;
+      border-right: 1px solid #dfdfdf;
+      margin-right: -1px;
+      font-size: 16px;
+      color: #70838d;
+      cursor: pointer;
+      &.current{
+        color: $fon;
+        border-bottom: 3px solid $green;
+        font-weight: 500;
+      }
+    }
+  }
+}
 
 @import "media";
