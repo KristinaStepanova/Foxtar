@@ -376,7 +376,7 @@
 // Category page
 .category {
   background-color: #f4f6f5;
-  padding-bottom: 110px;
+  padding-bottom: 80px;
   .item {
     max-width: 270px;
   }
@@ -399,17 +399,99 @@
     padding-left: 6px;
   }
 }
-.price-range {
+.categories {
+  ul {
+    padding-top: 20px;
+    li {
+      a {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 18px;
+        color: $fon;
+        line-height: 40px;
+        position: relative;
+        &:before {
+          content: "\f105";
+          font-family: "icomoon";
+          font-size: 14px;
+          color: $green;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      span {
+        color: #90a4ae;
+      }
+    }
+  }
+}
+.sellers .item,
+.item__info {
+  border: none;
+}
+.sellers {
+  .item{
+     margin-left: auto;
+     margin-right: auto;
+  }
+  .item__user-box {
+    border-bottom: 1px solid #dedede;
+  }
+  .item__user-box,
+  .item__info {
+    padding: 0;
+  }
+  .item__info-price {
+    font-size: 16px;
+  }
+  .item__num {
+    display: none;
+  }
+  .item__user img {
+    margin-right: 5px;
+  }
+  .item__user {
+    font-size: 13px;
+  }
+  .icon-star {
+    font-size: 11px;
+  }
+}
+.sellers__items{
+  .item:last-child .item__user-box{
+    border-bottom: none;
+  }
+  .item:first-child{
+    margin-top: 30px;
+  }
+}
+.sellers__btn{
+  color: #fff;
+  font-weight: 500;
+  background-color: $green;
+  width: 100%;
+  line-height: 45px;
+  padding: 0 45px;
+  text-align: center;
+}
+.price-range,
+.categories,
+.sellers {
   background-color: #fff;
   border: 1px solid #dedede;
   padding: 0px 30px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-.price-range__title {
+.price-range__title,
+.categories__title,
+.sellers__title {
   border-bottom: 1px solid #dedede;
   font-size: 20px;
   line-height: 60px;
   color: #263238;
+  font-weight: 700;
 }
 .price-range__form {
   button {
@@ -462,8 +544,74 @@
     display: none;
   }
 }
+.sort {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  padding: 0px 70px 0 25px;
+  position: relative;
+  margin-bottom: 30px;
+  &:after,
+  &:before {
+    font-size: 16px;
+    font-family: "icomoon";
+    position: absolute;
+    top: 18px;
+  }
+  &:after {
+    content: "\f009";
+    right: 55px;
+    color: $green;
+  }
+  &:before {
+    content: "\f00b";
+    right: 25px;
+    color: #90a4ae;
+  }
+  .jq-selectbox__select {
+    border: none;
+    box-shadow: none;
+    background: none;
+    text-shadow: none;
+    padding: 0;
+    padding-right: 30px;
+    position: relative;
+    font-size: 14px;
+    color: #707070;
+    &:after {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      font-family: "icomoon";
+      content: "\f0dc";
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+      font-size: 19px;
+    }
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+}
+.sort__title {
+  display: inline-block;
+  font-size: 14px;
+  color: #707070;
+  line-height: 60px;
+  padding-left: 25px;
+  position: relative;
+  &:before {
+    content: "\f161";
+    font-family: "icomoon";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #455a64;
+  }
+}
 .pagination {
-  padding-top: 60px;
+  padding-top: 30px;
   li {
     display: inline-block;
     & + li {
@@ -669,9 +817,9 @@
   .tab-content.current {
     display: inherit;
   }
-  .tabs{
+  .tabs {
     display: flex;
-    li{
+    li {
       width: 100%;
       border-bottom: 1px solid #dfdfdf;
       text-align: center;
@@ -681,7 +829,7 @@
       font-size: 16px;
       color: #70838d;
       cursor: pointer;
-      &.current{
+      &.current {
         color: $fon;
         border-bottom: 3px solid $green;
         font-weight: 500;
