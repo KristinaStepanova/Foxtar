@@ -9,7 +9,7 @@ $(function(){
         $(this).toggleClass('active');
     })
 
-    $('.upload__wrapper input, .upload__wrapper select').styler();
+    $('.upload__wrapper input, .upload__wrapper select, .sort select').styler();
 
     $('.slider__inner').slick({
         slidesToShow: 4,
